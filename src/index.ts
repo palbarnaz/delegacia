@@ -12,6 +12,8 @@ const crimeController = new CrimeCrontroller();
 
 app.post("/criminoso", criminosoController.cadastrarCriminoso)
 app.post("/crime/:id", crimeController.cadastrarCrime)
+app.get("/crime/:id", crimeController.listarCrimes)
+
 
 
 app.listen(8080, () => {

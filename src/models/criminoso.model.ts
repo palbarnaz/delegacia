@@ -4,19 +4,9 @@ import { Crime } from "./crime.model"
 
 export class Criminoso {
    public id: string
-   public crimes: Crime[]
+ 
 
-    constructor(public nome: string, public endereco: string,  public idade?: number, crimes?: Crime){
+    constructor(public nome: string, public endereco: string,  public idade?: number){
         this.id = randomUUID()
-
-       this.crimes = []
-      
-       if(crimes){
-        this.crimes.push(crimes)
-
-       }
-      
-
-
     }
 }
